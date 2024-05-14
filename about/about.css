@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --wd-title-font: "Lexend", Arial, Helvetica, sans-serif;
+    --wd-title-font-weight: 500;
+    --wd-title-color: #242424;
+    --wd-text-font: "Cabin", Arial, Helvetica, sans-serif;
+    --wd-text-font-weight: 400;
+    --wd-text-color: #777777;
+    --wd-text-font-size: 16px;
+    --wd-entities-title-font-weight: 400;
+    --wd-entities-title-color: #333333;
+    }
+
+
+a {
+    text-decoration: none;
+}
+.nav-link {
+    font-family: var(--wd-text-font);
+}
+
+.about-title h5, .about-title h4, .about-title-two h4, .about-title-detail h4, .about-section-three .card-title {
+    font-family: var(--wd-title-font);
+}
+
+.about-title p, .about-title-two p, .about-title-detail p, .about-section-three .card-text {
+    font-family: var(--wd-text-font);
+}
+.about-section {
+    padding: 30px 0;
+}
+
+.about-title h5 {
+    font-size: 18px;
+    color: #2247cc;
+}
+.about-title h4 {
+    font-size: 46px;
+}
+.about-title h4, .about-title-two h4, .about-title-detail h4, .about-section-three .card-text {
+    color: #242424; 
+}
+
+.about-title p, .about-title-two p, .about-section-three .card-text {
+    font-size: 16px;
+    color: var(--wd-entities-title-color);
+}
+.about-title-two h4 {
+    font-size: 32px;
+}
+.about-section-two {
+    margin-top: 40px;
+}
+.about-title-two, .about-title-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.about-title-detail {
+    padding: 20px 0;
+}
+.about-title-detail h4, .about-section-three .card-title {
+    font-size: 22px;
+}
+.about-title-detail p {
+    font-size: 16px;
+    color: var(--wd-text-color);
+}
+
+.about-section-three {
+    padding: 30px 0;
+}
+.about-section-three .card {
+    border: none;
+}
+.about-section-three .card-body {
+    padding: 16px 0;
+}
+.accordion-button {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--wd-title-font)
+}
+.accordion-body p {
+    color: #777777;
+    font-family: var(--wd-text-font);
+}
+.accordion-button:not(.collapsed) {
+    color: #2247cc;
+    background: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+@media (max-width:992px) {
+    .about-img, .about-title, .about-title-two, .social-name {
+        padding: 0 20px;
+    }
+    .about-title-two {
+        padding: 20px 10px ;
+    }
+    .about-title h4 {
+        font-size: 22px;
+    }
+    .about-title-two h4 {
+        font-size: 26px;
+    }
+    .about-title-detail h4 {
+        font-size: 16px;
+    }
+    .about-section-three .card {
+        padding: 0 10px;
+    }
+    
+}

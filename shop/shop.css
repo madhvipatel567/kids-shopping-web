@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --wd-title-font: "Lexend", Arial, Helvetica, sans-serif;
+    --wd-title-font-weight: 500;
+    --wd-title-color: #242424;
+    --wd-text-font: "Cabin", Arial, Helvetica, sans-serif;
+    --wd-text-font-weight: 400;
+    --wd-text-color: #777777;
+    --wd-text-font-size: 16px;
+    --wd-entities-title-font-weight: 400;
+    --wd-entities-title-color: #333333;
+    }
+
+
+a {
+    text-decoration: none;
+}
+
+.product-menu-one {
+    padding: 40px 15px;
+}
+
+.grow-circle {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.title-one h1 {
+    font-family: var(--wd-title-font);
+    color: #333333 !important;
+    font-size: 18px;
+}
+.product-type p {
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+    color: #ffffff;
+}
+.title-one {
+    border-radius: 50px;
+    width: max-content;
+    padding: 5px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.img-one {
+    transition: .3s;
+}
+.grow-circle:hover .img-one {
+    transform: scale(1.1);
+}
+.grow-circle:hover .title-one {
+    top: 45%;
+    transition: .3s;
+    cursor: pointer;
+}
+.grow-circle:hover .product-type p  {
+    top: 60%;
+    transition: .3s;
+   opacity: 1;
+}
+
+
+.feature-img-one {
+    transition: 0.3s;
+}
+.feature-img-two{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.feature-img-one:hover {
+    transform: scale(1.1);
+}
+.feature-img:hover .feature-img-two, .organic-img:hover .feature-img-two, .organic-img-one:hover .feature-img-two, .popular-hot:hover .feature-img-two, .popular:hover .feature-img-two {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.feature-img {
+    border-radius: 10px;
+}
+
+.feature-img::after, .popular-new::after {
+    content: "NEW";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-family: var(--wd-text-font);
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #ABBA81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular-hot::after {
+    content: "HOT";
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 12px;
+    font-family: var(--wd-text-font);
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #e3a08b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular-discount::after {
+    content: "-25%";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-family: var(--wd-text-font);
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #7ea4de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon i{
+    color: #000000 !important;
+    font-size: 18px;
+}
+.feature-icon {
+    padding: 10px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: 1s;
+}
+.feature-box-img:hover .feature-icon {
+    bottom: 2%;
+}
+.select-btn {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgb(194, 189, 189);
+}
+.feature-title h1 {
+    color: #333333 !important;
+    font-size: 16px !important;
+    font-family: var(--wd-title-font);
+}
+.feature-price h2 {
+    color: #2247CC !important;
+    font-family: var(--wd-text-font);
+    font-size: 16px !important;
+}
+
+.slider-two-one .carousel-control-prev-icon, .slider-two-one .carousel-control-next-icon {
+    filter: invert(0%) sepia(86%) saturate(7443%) hue-rotate(272deg) brightness(0) contrast(89%);
+    position: absolute;
+    top: 35%;
+}
+.slider-two-one .carousel-control-prev-icon{
+    left: -10px;
+}
+.slider-two-one .carousel-control-next-icon{
+    right: -10px;
+}
+
+.detail-title {
+    padding: 20px;
+}
+.link-home ul li a:hover {
+    color: red !important;
+}
+.drop-data .form-select{
+    border: none;
+    border-bottom: 1px solid red;
+
+}
+.drop-data .form-select:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+
+@media (max-width:1024px) {
+    
+    .product-menu {
+        overflow-x: scroll;
+        width: 1440px;
+    } 
+}
+
+@media (max-width:992px) {
+    .title-one h1 {
+        font-size: 14px;
+    }
+    .grow-circle {
+        width: 200px !important;
+    }
+    
+}
+@media (max-width:524px) {
+    .link-home ul li, .drop-data .form-select {
+        font-size: 14px;
+    }
+    .drop-data .form-select {
+        padding: 6px 20px 6px 12px;
+    }
+    
+}
