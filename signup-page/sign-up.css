@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --wd-title-font: "Lexend", Arial, Helvetica, sans-serif;
+    --wd-title-font-weight: 500;
+    --wd-title-color: #242424;
+    --wd-text-font: "Cabin", Arial, Helvetica, sans-serif;
+    --wd-text-font-weight: 400;
+    --wd-text-color: #777777;
+    --wd-text-font-size: 16px;
+    --wd-entities-title-font-weight: 400;
+    --wd-entities-title-color: #333333;
+    }
+
+
+a {
+    text-decoration: none;
+}
+
+.account-title {
+    margin-top: 30px;
+    background-color: rgb(247, 243, 240);
+    border-top: 1px solid rgba(0, 0, 0, 0.10588235294118);
+    padding: 20px;
+}
+.account-title h1 {
+    font-size: 44px;
+    font-family: var(--wd-title-font);
+}
+.account-title span {
+    font-size: 14px;
+    font-family: var(--wd-text-font)
+}
+.sign-up-form {
+    width: 450px;
+    padding: 50px 20px;
+}
+.sign-up-form h4 {
+    font-size: 22px;
+    font-family: var(--wd-title-font);
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:524px) {
+    .account-title h1 {
+        font-size: 30px;
+    }
+    
+}

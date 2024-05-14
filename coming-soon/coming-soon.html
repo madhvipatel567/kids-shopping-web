@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../navmenu.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- menu bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-white position-relative z-1 position-sticky"
+    >
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#"><img src="./images/w-bcs-logo-white-m.svg" alt=""></a> -->
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item d-flex align-items-center">
+              <i class="fa-solid fa-house d-lg-block d-md-none d-none"></i>
+              <a class="nav-link text-black" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i class="fa-solid fa-users d-lg-block d-md-none d-none"></i>
+              <a class="nav-link text-black" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i class="fa-regular fa-envelope d-lg-block d-md-none d-none"></i>
+              <a class="nav-link text-black" href="../contact-us/contact.html"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i
+                class="fa-solid fa-pen-to-square d-lg-block d-md-none d-none"
+              ></i>
+              <a class="nav-link text-black" href="../blog-page/blog.html"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-black"
+                aria-current="page"
+                href="../shop/shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black"
+                href="../coming-soon/coming-soon.html"
+                >Sale</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black"
+                href="../coming-soon/coming-soon.html"
+                >Outlet</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black"
+                href="../coming-soon/coming-soon.html"
+                >Gifts</a
+              >
+            </li>
+          </ul>
+          <div
+            class="icon-menu d-flex align-content-lg-center align-content-start"
+          >
+            <div
+              class="search-icon position-relative d-flex justify-content-start align-items-center d-lg-block d-md-none"
+            >
+              <i
+                class="text-black fa-solid fa-magnifying-glass d-lg-block d-md-none d-none px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              ></i>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-center gap-3 border-bottom w-100"
+            >
+              <button
+                class="canvas-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <i class="fa-regular fa-user text-black"></i>
+              </button>
+              <p class="login-name m-0 text-black">Login / Register</p>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-center gap-3 border-bottom w-100"
+            >
+              <i
+                class="fa-regular fa-heart px-3 notifation position-relative text-black"
+              ></i>
+              <p class="login-name m-0 text-black">Wishlist</p>
+            </div>
+            <div class="cart-icon d-lg-block d-md-none d-none">
+              <i
+                class="text-black fa-solid fa-cart-shopping px-3 notifation position-relative"
+              ></i>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-center gap-3 compare-icon1 border-bottom w-100"
+            >
+              <i class="fa-solid fa-code-compare compare-icon text-black"></i>
+              <p class="m-0 text-black">compare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="search-modal-open modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Search Here
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input type="text" placeholder="seach here..." />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Search
+            </button>
+            <button type="button" class="btn btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="about-section container">
+      <div class="row">
+        <div class="about-img col-lg-7 col-12">
+          <img
+            class="rounded img-fluid w-100"
+            src="../images/w-bcs-about-us-1.jpg.webp"
+            alt
+          />
+        </div>
+        <div class="col-lg-5 col-12 d-flex align-items-end mt-lg-0 mt-4">
+          <div class="about-title">
+            <h1 style="color: #2247cc !important" class="">
+              Landing Soon...!!!!!!!
+            </h1>
+            <h4>We create organic clothes for babies</h4>
+            <p>
+              In the very near future, we'll be launching in the UK. Add your
+              email below and be among the first to know when we officially take
+              flight.
+            </p>
+            <p>
+              Separated they live in Bookmarks grove right at the coast of the
+              Semantics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- canvas-btn -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div
+        class="offcanvas-header d-flex justify-content-between align-items-center"
+      >
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Sign in</h5>
+        <button
+          type="button"
+          class="canvas-btn d-flex align-items-center gap-2"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark text-black fw-bold fs-4"></i>Close
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="form-data pb-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="text-center sign-up">
+          <i class="fa-regular fa-user"></i>
+          <p>No account yet?</p>
+          <a href="../signup-page/sign-up.html">Create an Account</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer menu -->
+    <footer>
+      <div class="footer-main">
+        <div
+          class="container logo-footer-box d-flex justify-content-between align-items-center gap-3 flex-lg-nowrap flex-wrap"
+        >
+          <div>
+            <img src="../images/w-bcs-logo-black-l-1.svg" alt />
+          </div>
+          <div
+            class="sub-data d-flex justify-content-between align-items-center gap-1 flex-md-nowrap flex-wrap"
+          >
+            <div
+              class="msg-one d-flex align-items-center gap-2"
+              style="width: 444px"
+            >
+              <div
+                class="msg-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-regular fa-envelope text-white fs-5"></i>
+              </div>
+              <div class="join-para">
+                <p class="m-0">
+                  Join our mailing list to receive any latest updates and
+                  promotions
+                </p>
+              </div>
+            </div>
+            <div
+              class="sub-mail d-flex justify-content-between align-items-center gap-2"
+            >
+              <input
+                class="text-black w-100 bg-white"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button class="sign-up-btn border-0 text-white">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container logo-footer-box d-flex justify-content-between flex-lg-nowrap flex-wrap gap-4"
+          style="border-bottom: none"
+        >
+          <div>
+            <div class="footwr-title">
+              <h1 class>Beautiful things for small people</h1>
+            </div>
+            <div class="social d-flex gap-2">
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="background: #365493"
+              >
+                <i class="text-white fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="background: #000000"
+              >
+                <i class="text-white fa-brands fa-x-twitter"></i>
+              </div>
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="background: #cb2027"
+              >
+                <i class="text-white fa-brands fa-pinterest"></i>
+              </div>
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="background: #0274b3"
+              >
+                <i class="text-white fa-brands fa-linkedin-in"></i>
+              </div>
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="background: #37aee2"
+              >
+                <i class="text-white fa-brands fa-telegram"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="list-data d-flex justify-content-between w-100 gap-4 flex-sm-nowrap flex-wrap"
+          >
+            <div>
+              <ul class="list-menu p-0 list-unstyled">
+                <h5 style="color: #242424 !important">Shop</h5>
+                <li>Growsuits</li>
+                <li>Jumpers</li>
+                <li>Toys</li>
+                <li>Accessories</li>
+                <li>Dresses</li>
+                <li>Leggings</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-menu p-0 list-unstyled">
+                <h5 style="color: #242424 !important">Useful links</h5>
+                <li>Blog</li>
+                <li>Contact us</li>
+                <li>About us</li>
+                <li>Delivery & Return</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-menu p-0 list-unstyled">
+                <h5 style="color: #242424 !important">Got a question?</h5>
+                <li>Email: babyclothes@gmail.com</li>
+                <li>Call Us: (064) 332-1233</li>
+                <li>Monday-Friday</li>
+                <li>Hours: 9:00am - 5:00pm</li>
+                <li>913 Wyandotte St, Kansas City, MO 6415, United States</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <div
+            class="container copy-box d-flex justify-content-md-between align-items-center justify-content-center flex-lg-nowrap flex-wrap gap-3"
+          >
+            <div class>
+              <p class="text-sm-start text-center m-0">
+                Based on <span>WoodMart </span>theme 2024
+                <span>WooCommerce Themes</span>.
+              </p>
+            </div>
+            <div>
+              <img src="../images/payments.png" alt />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile-view-footer bg-white d-md-none d-block position-fixed bottom-0 w-100 z-2"
+        >
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="mobile-menu d-flex align-items-center">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <p class="m-0">Shop</p>
+            </div>
+            <div
+              class="mobile-menu notifation-one position-relative d-flex align-items-center"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <p class="m-0">Wishlist</p>
+            </div>
+            <div class="mobile-menu d-flex align-items-center">
+              <i class="fa-solid fa-share-nodes"></i>
+              <p class="m-0">Compare</p>
+            </div>
+            <div class="mobile-menu d-flex align-items-center">
+              <i class="fa-regular fa-user"></i>
+              <p class="m-0">Account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
